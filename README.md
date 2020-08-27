@@ -89,8 +89,8 @@ __Obs.__: Todas as páginas abaixo devem ser controladas por autenticação.
 * Essa página (dashboard) deve exibir a lista de todas as transações realizadas pelo usuário e o saldo em conta.
 * Deve conter também um menu com as opções "Dashboard", "Nova transação", "Meu perfil" e "Logout".
 
-### Página de nova tarnsação
-* Essa página deve conter um formulário com os inputs de descrição (title), valor (value) e um botão para cadastrar. Ao cadastrar a nova transação, você pode apenas exibir uma mensagem de sucesso. __Dica__: antes de enviar a transação para a api, verifique se o valor é maior ou menor que 0 para definir o tipo (type) da transação.
+### Página de nova transação
+* Essa página deve conter um formulário com os inputs de descrição (title), valor (value) e um botão para cadastrar. Ao cadastrar a nova transação, você pode apenas exibir uma mensagem de sucesso. __Dica__: antes de enviar a transação para a api, você pode verificar se o valor é maior ou menor que 0 para definir o tipo (type) da transação.
 
 ### Página de meu perfil
 * Essa página deve exibir as informações do usuário e conter um formulário com os inputs de nome, email, senha e um botão para editar. Ao editar as informações você pode apenas exibir uma mensagem de sucesso. 
