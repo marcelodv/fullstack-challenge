@@ -41,7 +41,7 @@ A aplicação deve conter rotas de:
 ```
 {
   "_id: "transaction_id",
-  "user_id: "user_id",
+  "user_id": "user_id",
   "title": "Salário",
   "value": 4000,
   "type": "income"
