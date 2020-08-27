@@ -19,6 +19,8 @@ A aplicação deve conter rotas de:
 ```
 * Edição dos dados do usuário: A rota deve receber como parametro o user_id. No corpo da requisição deve receber um objeto com as propriedades name, email e password. Ao final deverá ser retornado um objeto com as novas informações do usuário. __Obs.__: O usuário deve estar logado para acessar essa rota.
 
+* Listagem dos dados do usuário: A rota deve receber como parametro o user_id e listar suas infomações.  __Obs.__: O usuário deve estar logado para acessar essa rota.
+
 ### Autenticação
 A aplicação deve conter rotas de:
 * Login: A rota deve receber um objeto contendo email e senha do usuário, fazer devidas validações e retornar as informações do usuário juntamente com o token de autenticação. __Dica__: para autenticação, é legal você utilizar JWT.
@@ -26,7 +28,7 @@ A aplicação deve conter rotas de:
 * Logout: A rota receberá o user_id e simplesmente retornará um objeto com as informações abaixo:
 ```
 {
-  "_id": "user-id",
+  "_id": "user_id",
   "auth": false
 }
 ```
@@ -38,8 +40,8 @@ A aplicação deve conter rotas de:
 * Cadastro de transações. Essa rota deve receber title, value, type dentro do corpo da requisição, sendo type o tipo da transação, que deve ser income para entradas (depósitos) e outcome para saídas (retiradas). Deve receber também por parametro (req params) o user_id (id do usuário que está realizando a transação) e retornar as seguintes informações:
 ```
 {
-  "_id: "transaction-id",
-  "user_id: "user-id",
+  "_id: "transaction_id",
+  "user_id: "user_id",
   "title": "Salário",
   "value": 4000,
   "type": "income"
@@ -52,13 +54,13 @@ __Obs__.: A aplicação não deve permitir que uma transação do tipo outcome e
 {
   "transactions": [
     {
-      "_id": "mongo-id",
+      "_id": "transaction_id",
       "title": "Salário",
       "value": 4000,
       "type": "income"
     },
     {
-      "_id": "mongo-id",
+      "_id": "transaction_id",
       "title": "Cadeira Gamer",
       "value": 1000,
       "type": "outcome"
@@ -87,23 +89,23 @@ __Obs.__: Todas as páginas abaixo devem ser controladas por autenticação.
 * Essa página (dashboard) deve exibir a lista de todas as transações realizadas pelo usuário e o saldo em conta.
 * Deve conter também um menu com as opções "Dashboard", "Nova transação", "Meu perfil" e "Logout".
 
-### Página de cadastro de transação
+### Página de nova tarnsação
 * Essa página deve conter um formulário com os inputs de descrição (title), valor (value) e um botão para cadastrar. Ao cadastrar a nova transação, você pode apenas exibir uma mensagem de sucesso. __Dica__: antes de enviar a transação para a api, verifique se o valor é maior ou menor que 0 para definir o tipo (type) da transação.
 
-### Página de edição do usuário
-* Essa página deve conter um formulário com os inputs de nome, email, senha e um botão para editar. Ao editar as informações você pode apenas exibir uma mensagem de sucesso. 
+### Página de meu perfil
+* Essa página deve exibir as informações do usuário e conter um formulário com os inputs de nome, email, senha e um botão para editar. Ao editar as informações você pode apenas exibir uma mensagem de sucesso. 
 
 ### Logout
 * A opção de logout deve fazer uma requisição para a rota de logout na api, limpar os dados do usuário no localstorage e redirecionar ele para o login.
 
 ## Considerações finais
 * É necessário fazer somente o especificado acima. Porém, se quiser deixar sua criatividade fluir (principlamente no frontend) fique à vontade para acrescentar o que você quiser!
-* Assuntos de como o desenvolvedor lida com status code, validações gerais e gerenciamento de estado (frontend) fará parte da avaliação.
+* Assuntos sobre como o desenvolvedor lida com status code, validações gerais e gerenciamento de estado (frontend) fará parte da avaliação.
 * A organização e estrutura do projeto também fará parte da avaliação.
-* Seria legal se você colocasse no README.md do projeto um passo a passo para a execução dos dois ambientes.
 
 ## Entrega e prazo do desafio
 * Você deve subir os projetos (frontend e backend) para o seu github e compartilhar a url conosco através dos e-mails: caionascimento@questinteligencia.com.br e guilhermechi@indecx.com.br;
+* Seria legal se você colocasse no README.md do projeto um passo a passo para a execução dos dois ambientes.
 * Você tem 2 finais de semana para concluir esse desafio a partir da data de entrega. Se terminar antes, basta nos enviar o e-mail.
 
 Boa sorte! <br />
