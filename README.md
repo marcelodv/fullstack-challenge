@@ -100,9 +100,10 @@ __Obs.__: Todas as páginas abaixo devem ser controladas por autenticação.
 * É necessário fazer somente o especificado acima. Porém, se quiser deixar sua criatividade fluir (principlamente no frontend) fique à vontade para acrescentar o que você quiser!
 * Assuntos de como o desenvolvedor lida com status code, validações gerais e gerenciamento de estado (frontend) fará parte da avaliação.
 * A organização e estrutura do projeto também fará parte da avaliação.
+* Seria legal se você colocasse no README.md do projeto um passo a passo para a execução dos dois ambientes.
 
 ## Entrega e prazo do desafio
-* Você deve subir o projeto (frontend e backend) para o seu github e compartilhar a url conosco através dos e-mails: caionascimento@questinteligencia.com.br e guilhermechi@indecx.com.br;
+* Você deve subir os projetos (frontend e backend) para o seu github e compartilhar a url conosco através dos e-mails: caionascimento@questinteligencia.com.br e guilhermechi@indecx.com.br;
 * Você tem 2 finais de semana para concluir esse desafio a partir da data de entrega. Se terminar antes, basta nos enviar o e-mail.
 
 Boa sorte! <br />
