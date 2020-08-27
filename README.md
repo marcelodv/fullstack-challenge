@@ -45,7 +45,7 @@ A aplicação deve conter rotas de:
   "type": "income"
 }
 ```
-Obs: A aplicação não deve permitir que uma transação do tipo outcome extrapole o valor total que o usuário tem em caixa, retornando uma resposta com código HTTP 400.
+__Obs__.: A aplicação não deve permitir que uma transação do tipo outcome extrapole o valor total que o usuário tem em caixa, retornando uma resposta com código HTTP 400.
 
 * Listagem das transações. Essa rota deve receber como parametro o id do usuário e listar todas as transações feitas por ele junto com o valor de soma de entradas, retiradas e total de crédito. Essa rota deve retornar um objeto com o formato a seguir:
 ```
