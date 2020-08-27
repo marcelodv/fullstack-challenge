@@ -106,7 +106,7 @@ __Obs.__: Todas as páginas abaixo devem ser controladas por autenticação.
 ## Entrega e prazo do desafio
 * Você deve subir os projetos (frontend e backend) para o seu github e compartilhar a url conosco através dos e-mails: caionascimento@questinteligencia.com.br e guilhermechi@indecx.com.br;
 * Seria legal se você colocasse no README.md do projeto um passo a passo para a execução dos dois ambientes.
-* Você tem 2 finais de semana para concluir esse desafio a partir da data de entrega. Se terminar antes, basta nos enviar o e-mail.
+* Você tem dois finais de semana para concluir esse desafio a partir da data de entrega. Se terminar antes, basta nos enviar o e-mail.
 
 Boa sorte! <br />
 Equipe IndeCX. :green_heart:
